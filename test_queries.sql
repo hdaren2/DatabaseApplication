@@ -1,3 +1,6 @@
+.headers on
+.mode column
+
 -- 1. Find the manager who oversees the department with the highest average product cost along with the department name and average cost.
 WITH dept_averages AS (
     SELECT 
