@@ -1,7 +1,7 @@
 Grocery Store Database Application
-- This project implements a grocery store database management system using SQLite and a Python-based command-line interface.
-- Requirements:
-  - Python 3.8+
+  - This project implements a grocery store database management system using SQLite and a Python-based command-line interface.
+  - Requirements:
+    - Python 3.8+
     
   Project Files:
   - grocery.db - SQLite database with full tables & test data
@@ -45,7 +45,7 @@ Grocery Store Database Application
     - Update price or quantity
     - Delete product
   
-  Running the App:
+  Running the App and Test Queries:
     Steps:
     1. Initialize the database
       - python3 init_db.py
