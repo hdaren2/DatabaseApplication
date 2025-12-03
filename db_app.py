@@ -1,7 +1,7 @@
 import sqlite3
 from contextlib import closing
 
-DB_PATH = "/Users/hunterdarensbourg/PycharmProjects/DatabaseApplication/grocery.db"
+DB_PATH = "grocery.db"
 
 def get_connection():
     conn = sqlite3.connect(DB_PATH)
@@ -98,7 +98,7 @@ def update_member_password(member_id):
         print("Password updated.")
 
 def delete_member_profile(member_id):
-    confirm = input("Are you sure you want to delete your profile? This CANNOT be undone. (y/N): ").lower()
+    confirm = input("Are you sure you want to delete your profile? This CANNOT be undone. (y/n): ").lower()
     if confirm != "y":
         print("Cancelled.")
         return
@@ -253,7 +253,7 @@ def delete_associate():
         print("Invalid ID.")
         return
 
-    confirm = input("Are you sure you want to delete this associate? (y/N): ").lower()
+    confirm = input("Are you sure you want to delete this associate? (y/n): ").lower()
     if confirm != "y":
         print("Cancelled.")
         return
@@ -396,7 +396,7 @@ def delete_product():
         print("Invalid ID.")
         return
 
-    confirm = input("This will delete related rows (purchase, supplies, product_aisle). Continue? (y/N): ").lower()
+    confirm = input("This will delete related rows (purchase, supplies, product_aisle). Continue? (y/n): ").lower()
     if confirm != "y":
         print("Cancelled.")
         return
@@ -447,7 +447,7 @@ def main():
 ==== Grocery Store Application ====
 1. Member login
 2. Manager login
-3. Inventory management (no login / or manager login)
+3. Inventory management
 4. Exit
 """)
         choice = input("Choose an option: ").strip()
