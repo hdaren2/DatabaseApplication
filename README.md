@@ -48,9 +48,24 @@ Grocery Store Database Application
   
   Running the App and Test Queries:
     Steps:
-    1. Initialize the database
+    1. Getting the files
+      - Extract zip file onto your enviornment (we used VS Code + added python debugger extension)
+      OR 
+      - Navigate to the extracted folder in your console/command prompt.
+
+    2. Execute the following command in the console to run the database file 
       - python3 init_db.py
-    2. Run the app
+
+    3. Execute the following command in the console to run the app file
       - python3 db_app.py
-    3. Test queries
-      - sqlite3 grocery.db < test_queries.sql
+
+    4. Testing through App interface 
+    Sample access inputs to test with:
+      * Select member login | email address input: <mason.reed@outlook.com> | psw input: <aL55ntQ>
+      * Select Manager login | Manger id input: <78986> 
+      * Select Inventory Managment | Select Delete product | ID input <221> 
+    ** For more individual object referencing look at "sample_data.sql" file **
+
+    5. Execute the following command in the console to run the automated database test scripts
+      - <sqlite3 grocery.db < test_queries.sql>
+    ** this will display the outputted results of the premade test queries **
