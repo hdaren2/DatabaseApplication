@@ -9,6 +9,7 @@ Grocery Store Database Application
   - init_db.py - deletes existing grocery.db and recreates it using grocery_schema.sql + sample_data.sql
   - grocery_schema.sql - table creation SQL
   - sample_data.sql	- dataset inserts SQL
+  - test_queries.sql - SQL queries used to verify database functionality
   
   Application Interface Menu
   ==== Grocery Store Application ====
@@ -50,3 +51,5 @@ Grocery Store Database Application
       - python3 init_db.py
     2. Run the app
       - python3 db_app.py
+    3. Test queries
+      - sqlite3 grocery.db < test_queries.sql
