@@ -11,7 +11,8 @@ Grocery Store Database Application
   - sample_data.sql	- dataset inserts SQL
   - test_queries.sql - SQL queries used to verify database functionality
   
-  Application Interface Menu
+  Application Interface Menu:
+  
   ==== Grocery Store Application ====
   1. Member login
   2. Manager login
